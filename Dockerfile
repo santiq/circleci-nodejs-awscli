@@ -1,5 +1,4 @@
-FROM circleci/node:8.11.2
-
+FROM circleci/node:8-stretch
 USER root
 
 RUN apt-get -y -qq update
