@@ -6,31 +6,32 @@ This image is based on [CircleCI's NodeJS image](https://hub.docker.com/r/circle
 - NPM: 6.1.0
 - Python: 2.7.9
 - AWS CLI: 1.15.24
+- AWS EB Python
 
 ### Build image
 ```
-git clone https://github.com/travnels/circleci-nodejs-awscli
+git clone https://github.com/santiq/circleci-nodejs-awscli
 cd circleci-nodejs-awscli
-docker build -t travnels/circleci-nodejs-awscli:latest .
+docker build -t santypk4/circle-ci-nodejs-aws:latest .
 ```
 
 ### Push to Docker Hub
 ```
-docker push travnels/circleci-nodejs-awscli:latest
+docker push santypk4/circle-ci-nodejs-aws:latest
 ```
 
 ### Pull from Docker Hub
 ```
-docker pull travnels/circleci-nodejs-awscli:latest
+docker pull santypk4/circle-ci-nodejs-aws:latest
 ```
 
 ### Run image
 ```
-docker run -it travnels/circleci-nodejs-awscli bash
+docker run -it santypk4/circle-ci-nodejs-aws:latest bash
 ```
 
 ### Use in CircleCI
 ```
 docker:
-    - image: travnels/circleci-nodejs-awscli:latest
+    - image: santypk4/circle-ci-nodejs-aws:latest
 ```
